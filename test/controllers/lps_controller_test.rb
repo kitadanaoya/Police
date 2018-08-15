@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class LPsControllerTest < ActionDispatch::IntegrationTest
+class LpsControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get l_ps_home_url
+    get lps_home_url
     assert_response :success
   end
 

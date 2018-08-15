@@ -1,0 +1,33 @@
+// Place all the styles related to the lps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'application.css';
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+h1 {
+ font-size: 2.5em; 
+}
+
+h2 {
+ font-size: 2em; 
+}
+
+h3 {
+ font-size: 1.7em; 
+}
+
+h4 {
+    font-size: 1.4em
+}
+
+p {
+ font-size: 1em; 
+}
+
+
+
+/* navbar  */
+.navbar {
+ background-color: #ff1744;
+}
