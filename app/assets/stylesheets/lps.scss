@@ -5,24 +5,36 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
+/* all */
+
 h1 {
  font-size: 2.5em; 
+ margin: .8em 0;
 }
 
 h2 {
  font-size: 2em; 
+ margin: .5em 0;
 }
 
 h3 {
- font-size: 1.7em; 
+ font-size: 1.5em; 
 }
 
 h4 {
-    font-size: 1.4em
+    font-size: 1.3em
 }
 
 p {
  font-size: 1em; 
+}
+
+img {
+ max-width: 100%;
+}
+
+.container {
+ padding: 0;
 }
 
 
@@ -30,4 +42,36 @@ p {
 /* navbar  */
 .navbar {
  background-color: #ff1744;
+ border-bottom: solid 1px #fff
+}
+
+
+/* LP */
+.icatch {
+ position: relative;
+}
+
+.icatch button {
+ position: absolute;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border: solid white 2px;
+  padding: 7px;
+  color: #ff1744;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow:#ccc .1em .1em .1em;
+}
+
+
+.can {
+ text-align: center;
+}
+
+.svg-can {
+ background-color: #ff1744;
+ border-radius: 50%;
 }
