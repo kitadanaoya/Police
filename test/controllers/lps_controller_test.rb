@@ -5,5 +5,5 @@ class LpsControllerTest < ActionDispatch::IntegrationTest
     get lps_home_url
     assert_response :success
   end
-
+  
 end
