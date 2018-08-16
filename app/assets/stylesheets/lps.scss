@@ -14,7 +14,7 @@ h1 {
 
 h2 {
  font-size: 2em; 
- margin: .5em 0;
+ margin: .8em 0;
 }
 
 h3 {
@@ -51,6 +51,7 @@ img {
  position: relative;
 }
 
+
 .icatch button {
  position: absolute;
   top: 85%;
@@ -58,20 +59,91 @@ img {
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  border: solid white 2px;
+   border: solid white 2px;
   padding: 7px;
   color: #ff1744;
   text-decoration: none;
   background-color: #fff;
-  box-shadow:#ccc .1em .1em .1em;
+  box-shadow:#ccc .1em .1em .1em, #ccc -.1em .1em .1em;
+}
+
+.signup button {
+   border: solid white 2px;
+  padding: 7px;
+  color: #ff1744;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow:#ccc .1em .1em .1em, #ccc -.1em .1em .1em;
 }
 
 
-.can {
+.can, .howto, .example, .meyasubako, .signup, .copyright {
  text-align: center;
+ border-bottom: solid 1px #ccc;
+ margin-top: 2em;
+ margin-bottom: 2em;
+ padding-bottom: 2em;
 }
 
 .svg-can {
  background-color: #ff1744;
  border-radius: 50%;
+}
+
+.table{
+  td {
+   display: table-cell;
+   vertical-align: middle;
+   position: relative;
+   i {
+    position: absolute;
+    bottom: -.5em;
+    left: 70%;
+    color: #ff1744;
+   }
+  }
+  tbody {
+   border-top: none;   
+  }
+}
+.svg-how {
+ width: 100%;
+}
+
+
+.example {
+ margin: 0 1em 2em 1em;
+  img {
+   position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.card {
+ margin: 1em;
+ padding: 0;
+ border: solid .1em #ff1744;
+ box-shadow: #ccc .1em .1em .1em;
+ .card-title {
+   padding: 2em .5em;
+   background-color: #ff1744;
+   color: #fff;
+ }
+ .card-text {
+  padding: .5em 2em 1.5em 2em;
+  font-size: 0.8em;
+  text-align: left;
+   li {
+     padding: 1em 0;
+   }
+ }
+}
+
+
+.copyright {
+ border-bottom: none;
+ margin-bottom: 0;
 }

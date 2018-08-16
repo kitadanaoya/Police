@@ -6,7 +6,7 @@
     </div>
 
     <div class="can">
-        <h2>Policeでできること</h2>
+        <h2>できること</h2>
         
           <div class="row">
             <div class="col-4">
@@ -26,4 +26,73 @@
     </div>
     
     
+    <div class="howto">
+        <h2>つかいかた</h2>
+                
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>1. フォームに答える！<i class="fas fa-sort-down"></i></td><td><%= image_tag('form.svg', class: "svg-how") %></td>
+              </tr>              
+              <tr>
+                <td>2. 自分ルールが出来る！<i class="fas fa-sort-down"></i></td><td><%= image_tag('read.svg', class: "svg-how") %></td>
+              </tr>
+              <tr>
+                <td>3. 自分の生活をチェック！<i class="fas fa-sort-down"></i></td><td><%= image_tag('genjitu.svg', class: "svg-how") %></td>
+              </tr>
+              <tr>
+                <td>あとは布教したり対話したり秘密にしたりあなた次第！</td><td><%= image_tag('usagi.svg', class: "svg-how") %></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+    <div class="example">
+        <h2>たとえば...</h2>
+        <div class="row">
+            <div class="col-sm-3 col-md-3 morphing">
+                <%= image_tag('user1.png',class: "rounded-circle", alt: "user1", style: "width: 100%;") %>
+            </div>
+            <p style="margin: 0 auto">制作者の場合..</p>
+            
+            <div class="col-sm-9 col-md-9 card">
+                <h3 class="card-title">『迷った時はリトルきただに話しかける』</h3>
+                <ol class="card-text">
+                    <li>なんでもあり。「意味わからない」ではなく「なんでそう思うんだろう？」</li>
+                    <li>お金＝価値じゃない。何がいいかは自分で決める。</li>
+                    <li>人の目から逃れる。親の目、社会の目、友達の目、過去の自分の目からの自由。</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <div class="meyasubako">
+        <h2>目安箱</h2>
+        <a href="https://peing.net/ja/naoya0206k1"><%= image_tag('peing.png', alt: 'peing') %></a>
+    </div>
+    
+    <div class="signup">
+        <button class="btn">SignUp</button>
+    </div>
+    
+    <div class="copyright">
+        All copyright <b>not</b> reserved site-owner.<br>
+        Recommended copy & taking advantage of this site.
+    </div>
+    
 </div>
+
+
+
+<script>
+    $(function(){
+    let $hoge = $('.morphing');
+    $hoge.morphing({
+    numVert: 25,
+    spring: 0.005,
+    friction: 0.9,
+    radius: 130,
+    fps: 60
+    });
+    });
+</script>
