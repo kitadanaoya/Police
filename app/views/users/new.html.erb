@@ -1,5 +1,28 @@
-<!-- form -->
+<% provide(:title, "Signup") %>
 
-
-
-<button>Submit</button>
+<div class="row">
+  <div class="offset-1 col-10">
+    <h1自分ルールを作ろう！</h1>
+    <p>以下のフォームに答えて自分ルールを可視化しよう！</p>
+    
+    
+    <!-- form -->
+    <%= form_for(@user, url: signup_path) do |f| %>
+      <%= render 'shared/error_messages' %>
+      
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+      
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
+      
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+      
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+      
+      <%= f.submit "Signup", class: "btn" %> 
+    <% end %>
+  </div>
+</div>
