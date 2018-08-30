@@ -1,11 +1,13 @@
 // Place all the styles related to the lps controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import 'application.css';
+
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-
+@import 'application.scss';
+@import 'users.scss';
 /* all */
+
 
 h1 {
  font-size: 2.5em; 
@@ -53,18 +55,21 @@ img {
 
 
 .btn {
- position: absolute;
-  top: 85%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
    border: solid white 2px;
   padding: 7px;
   color: #ff1744;
   text-decoration: none;
   background-color: #fff;
   box-shadow:#ccc .1em .1em .1em, #ccc -.1em .1em .1em;
+}
+
+.btn-posi {
+ position: absolute;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 
