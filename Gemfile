@@ -15,6 +15,10 @@ gem 'jquery-rails'
 gem 'rails-ujs', '~> 0.1.0'
 gem 'bcrypt', '~> 3.1.11'
 gem 'rails-controller-testing'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -44,6 +48,10 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
   
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
